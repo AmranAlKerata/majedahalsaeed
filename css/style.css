@@ -1,0 +1,149 @@
+/* General */
+---------------------------------*/ html {
+  background-color: black;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: 'Aref Ruqaa', serif;
+  /* background-color: #000; */
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(0, 0, 0) 0%,
+    rgb(26, 26, 26) 90.2%
+  );
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: white;
+}
+.box p {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.span-title {
+  font-size: 20px;
+  font-weight: 500;
+}
+.wrapper {
+  height: 100vh;
+}
+p {
+  font-size: 20px;
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  .wrapper .info {
+    flex-wrap: wrap;
+  }
+}
+.wrapper .logo {
+  width: 300px !important;
+  max-width: 100%;
+}
+.wrapper img {
+  max-width: 50px;
+}
+
+.wrapper .info .box {
+  border: 1px solid #4d4b4b;
+  border-radius: 10px;
+  padding: 15px 25px;
+  margin: 15px 0;
+  transition: all .3s ease-in-out;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.wrapper .info .box::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+  width: 0;
+  height: 100%;
+  z-index: -1;
+  transition: all .3s ease-in-out;
+}
+.wrapper .info .box span {
+  margin-top: 10px;
+  display: block;
+  transition: all .3s ease-in-out;
+}
+.wrapper .info .box:hover {
+  border: 1px solid white;
+}
+.wrapper .info .box:hover span {
+  color: #010101;
+}
+.wrapper .info .box:hover::before {
+  width: 100%;
+}
+@media (max-width: 767px) {
+  body {
+    background-size: cover;
+  }
+  .wrapper .info .box a {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .wrapper .logo {
+    width: 200px !important;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+.wrapper .info > .box {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.delay-200 {
+  -webkit-animation-delay: 200ms;
+  animation-delay: 200ms;
+}
+.delay-400 {
+  -webkit-animation-delay: 400ms;
+  animation-delay: 400ms;
+}
+.delay-600 {
+  -webkit-animation-delay: 600ms;
+  animation-delay: 600ms;
+}
+.delay-800 {
+  -webkit-animation-delay: 800ms;
+  animation-delay: 800ms;
+}
+.delay-1000 {
+  -webkit-animation-delay: 1000ms;
+  animation-delay: 1000ms;
+}
+.delay-1200 {
+  -webkit-animation-delay: 1200ms;
+  animation-delay: 1200ms;
+}
+.delay-1400 {
+  -webkit-animation-delay: 1200ms;
+  animation-delay: 1200ms;
+}
+.store span {
+  font-size: 20px;
+}
+.store img {
+  max-width: 70px;
+  width: 100%;
+}

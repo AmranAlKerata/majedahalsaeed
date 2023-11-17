@@ -91,10 +91,7 @@ p {
   body {
     background-size: cover;
   }
-  .wrapper .info .box a {
-    flex-direction: column;
-    justify-content: center;
-  }
+
   .wrapper {
     padding-top: 50px;
     padding-bottom: 50px;

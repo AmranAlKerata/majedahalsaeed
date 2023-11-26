@@ -37,6 +37,10 @@ p {
   font-size: 20px;
   color: #fff;
 }
+.wrapper {
+  background-image: url("../img/Asset\ 1.svg");
+  background-repeat: repeat;
+}
 
 @media (max-width: 991px) {
   .wrapper .info {

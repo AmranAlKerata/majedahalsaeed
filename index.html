@@ -21,7 +21,7 @@
 <body>
 	<div class="wrapper d-flex align-items-center justify-content-center mt-5 pb-5">
 		<div class="container">
-			<div class="box text-center">
+			<div class="up-section text-center">
 				<div class="img mb-4 animate__animated  animate__fadeInDown delay-200"><img class="logo"
 						src="img/logo-light.png" alt="Logo"></div>
 				<p class="animate__animated  animate__fadeInUp delay-400"> ستديو مصرح من وزارة الثقافة والاعلام ، متخصص
@@ -33,61 +33,29 @@
 			<div class="info">
 				<div class="row mt-5 pt-3 justify-content-between">
 
-					<div class="col-12 col-md-5 mb-4">
-
-						<div class="">
-							<h4 class="text-light fw-bold text-center">القسم النسائي</h4>
-							<div class="row">
-								<div class="col-6">
-									<div class="box animate__animated  animate__fadeInUp delay-400">
-										<a href="https://api.whatsapp.com/send?phone=966560889822" target="_blank">
-											<div class="img"><img src="img/whatsapp.svg" alt="Whatsapp"></div>
-											<span>واتساب </span>
-										</a>
-
-									</div>
-								</div>
-								<div class="col-6">
-									<div class="box animate__animated  animate__fadeInUp delay-600">
-										<a href="https://www.instagram.com/majedahalsaeed" target="_blank">
-
-											<div class="img"><img src="img/instagram.svg" alt="Instagram"></div>
-											<span>إنستغرام </span>
-										</a>
-									</div>
-								</div>
-
-							</div>
-
-						</div>
+					<div class="col-12 col-md text-center">
+						<button type="button"
+							class="button d-flex align-items-center justify-content-between gap-3 animate__animated  animate__fadeInUp mx-auto delay-100"
+							data-bs-toggle="modal" data-bs-target="#womenSection">
+							<span class="fw-bold text-center">حجوزات القسم النسائي</span>
+							<img src="img/click.svg" alt="click" width="30">
+						</button>
 					</div>
-					<div class="col-12 col-md-5">
-
-						<div class="">
-							<h4 class="text-light fw-bold text-center">القسم الرجالي و التجاري</h4>
-							<div class="row">
-								<div class="col-6">
-									<div class="box animate__animated  animate__fadeInUp delay-400">
-										<a href="https://api.whatsapp.com/send?phone=966561196613" target="_blank">
-											<div class="img"><img src="img/whatsapp.svg" alt="Whatsapp"></div>
-											<span>واتساب </span>
-										</a>
-
-									</div>
-								</div>
-								<div class="col-6">
-									<div class="box animate__animated  animate__fadeInUp delay-600">
-										<a href="https://instagram.com/majedahalsaeed_studio" target="_blank">
-
-											<div class="img"><img src="img/instagram.svg" alt="Instagram"></div>
-											<span>إنستغرام </span>
-										</a>
-									</div>
-								</div>
-
-							</div>
-
-						</div>
+					<div class="col-12 col-md  text-center">
+						<button type="button"
+							class="button d-flex align-items-center justify-content-between gap-3 animate__animated  animate__fadeInUp mx-auto delay-200"
+							data-bs-toggle="modal" data-bs-target="#menSection">
+							<span class="fw-bold text-center">حجوزات القسم الرجالي</span>
+							<img src="img/click.svg" alt="click" width="30">
+						</button>
+					</div>
+					<div class="col-12 col-md  text-center">
+						<button type="button"
+							class="button d-flex align-items-center justify-content-between gap-3 animate__animated  animate__fadeInUp mx-auto delay-300"
+							data-bs-toggle="modal" data-bs-target="#commSection">
+							<span class="fw-bold text-center">حجوزات القسم التجاري</span>
+							<img src="img/click.svg" alt="click" width="30">
+						</button>
 					</div>
 				</div>
 
@@ -154,9 +122,117 @@
 
 			</div>
 		</div>
+		<!-- Modal -->
+		<div class="modal fade" id="womenSection" tabindex="-1" aria-labelledby="womenSectionLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="text-light fw-bold text-center">القسم النسائي</h4>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-6">
+								<div class="box animate__animated  animate__fadeInUp delay-100">
+									<a href="https://api.whatsapp.com/send?phone=966560889822" target="_blank">
+										<div class="img"><img src="img/whatsapp.svg" alt="Whatsapp"></div>
+										<span>واتساب </span>
+									</a>
+
+								</div>
+							</div>
+							<div class="col-6">
+								<div class="box animate__animated  animate__fadeInUp delay-200">
+									<a href="https://www.instagram.com/majedahalsaeed" target="_blank">
+
+										<div class="img"><img src="img/instagram.svg" alt="Instagram"></div>
+										<span>إنستغرام </span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- Modal -->
+		<div class="modal fade" id="menSection" tabindex="-1" aria-labelledby="menSectionLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="text-light fw-bold text-center">القسم الرجالي</h4>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-6">
+								<div class="box animate__animated  animate__fadeInUp delay-400">
+									<a href="https://api.whatsapp.com/send?phone=966553323533" target="_blank">
+										<div class="img"><img src="img/whatsapp.svg" alt="Whatsapp"></div>
+										<span>واتساب </span>
+									</a>
+
+								</div>
+							</div>
+							<div class="col-6">
+								<div class="box animate__animated  animate__fadeInUp delay-600">
+									<a href="https://instagram.com/majedahalsaeed_studio" target="_blank">
+
+										<div class="img"><img src="img/instagram.svg" alt="Instagram"></div>
+										<span>إنستغرام </span>
+									</a>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal -->
+		<div class="modal fade" id="commSection" tabindex="-1" aria-labelledby="commSection" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="text-light fw-bold text-center">القسم التجاري</h4>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-6">
+								<div class="box animate__animated  animate__fadeInUp delay-400">
+									<a href="https://api.whatsapp.com/send?phone=966561196613" target="_blank">
+										<div class="img"><img src="img/whatsapp.svg" alt="Whatsapp"></div>
+										<span>واتساب </span>
+									</a>
+
+								</div>
+							</div>
+							<div class="col-6">
+								<div class="box animate__animated  animate__fadeInUp delay-600">
+									<a href="https://instagram.com/majedahalsaeed_studio" target="_blank">
+
+										<div class="img"><img src="img/instagram.svg" alt="Instagram"></div>
+										<span>إنستغرام </span>
+									</a>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
 	</div>
 
 
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+		crossorigin="anonymous"></script>
 
 </body>
 

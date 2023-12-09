@@ -44,7 +44,7 @@ a {
 a:hover {
   color: white;
 }
-.box p {
+.up-section p {
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
@@ -76,7 +76,7 @@ p {
   max-width: 50px;
 }
 
-.wrapper .info .box {
+.box {
   border: 1px solid #4d4b4b;
   border-radius: 10px;
   padding: 15px 25px;
@@ -86,7 +86,7 @@ p {
   position: relative;
   overflow: hidden;
 }
-.wrapper .info .box::before {
+.box::before {
   content: "";
   position: absolute;
   left: 0;
@@ -97,18 +97,18 @@ p {
   z-index: -1;
   transition: all .3s ease-in-out;
 }
-.wrapper .info .box span {
+.box span {
   margin-top: 10px;
   display: block;
   transition: all .3s ease-in-out;
 }
-.wrapper .info .box:hover {
+.box:hover {
   border: 1px solid white;
 }
-.wrapper .info .box:hover span {
+.box:hover span {
   color: #010101;
 }
-.wrapper .info .box:hover::before {
+.box:hover::before {
   width: 100%;
 }
 @media (min-width: 1025px) {
@@ -117,7 +117,7 @@ p {
   }
 }
 @media (max-width: 767px) {
-  .wrapper .info .box span {
+  .box span {
     font-size: 14px;
   }
   body {
@@ -135,7 +135,7 @@ p {
     font-size: 16px;
   }
 }
-.wrapper .info > .box {
+.info > .box {
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -168,4 +168,65 @@ p {
 .delay-1400 {
   -webkit-animation-delay: 1200ms;
   animation-delay: 1200ms;
+}
+.modal-content {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.738
+  ); /* White background with 50% opacity */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for depth */
+  border: 1px solid #ddd;
+}
+.modal {
+  backdrop-filter: blur(5px); /* Blur effect for the glass look */
+  -webkit-backdrop-filter: blur(5px); /* For Safari */
+  border: 1px solid rgba(
+      255,
+      255,
+      255,
+      0.2
+    ); /* Optional: Adds a subtle border */
+}
+.modal.fade .modal-dialog {
+  transition: transform 150ms ease-out;
+}
+.button {
+  border: 1px solid #4d4b4b;
+  border-radius: 10px;
+  padding: 15px 25px;
+  margin: 15px 0;
+  transition: all .3s ease-in-out;
+  text-align: center;
+  position: relative;
+  background-color: transparent;
+  overflow: hidden;
+}
+.button span {
+  color: #fff;
+}
+.button::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+  width: 0;
+  height: 100%;
+  z-index: -1;
+  transition: all .3s ease-in-out;
+}
+.button span {
+  display: block;
+  transition: all .3s ease-in-out;
+}
+.button:hover {
+  border: 1px solid white;
+}
+.button:hover span {
+  color: #010101;
+}
+.button:hover::before {
+  width: 100%;
 }

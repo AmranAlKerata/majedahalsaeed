@@ -230,3 +230,19 @@ p {
 .button:hover::before {
   width: 100%;
 }
+.offers-btn {
+  background-color: #ff8080;
+  border: 1px solid #ff8080;
+}
+.offers-btn::before {
+  background-color: #ff8080;
+}
+.offers-btn:hover {
+  background-color: #ff8080;
+  border: 1px solid #ff8080;
+}
+
+.button.beig {
+  border: 1px solid #976645;
+  background-color: #976645;
+}
